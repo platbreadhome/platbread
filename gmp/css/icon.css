@@ -1,0 +1,409 @@
+   /*아이콘*/
+   /* default  = 18px / small = 16px / medium = 24px / Large = 36px */
+   :root{
+    --icon-df : 16px;
+    --icon-sm : 12px;
+    --icon-md : 20px;
+    --icon-lg : 30px;
+  }
+  
+  
+   .icon-container{display: inline-block; width: var(--icon-df); height: var(--icon-df); background-repeat: no-repeat; vertical-align: middle;}
+   .icon-container [class*="eicon-"]{display: block; width: 100%; height: 100%; background-image: url(../images/icon/icons-16.svg);  }
+   .icon-container.i-sm [class*="eicon-"]{ background-size: calc(256px * 0.75) auto; } /*background-image: url(../images/icon/icons-12.svg);*/
+   .icon-container.i-md [class*="eicon-"]{ background-size: calc(256px * 1.25) auto; } /*background-image: url(../images/icon/icons-20.svg);*/
+   .icon-container.i-lg [class*="eicon-"]{ background-size: calc(256px * 1.875) auto; } /*background-image: url(../images/icon/icons-30.svg);*/
+   
+   /*아이콘 사이즈*/
+   .i-sm{width: var(--icon-sm); height: var(--icon-sm);}
+   .i-md{width: var(--icon-md); height: var(--icon-md);}
+   .i-lg{width: var(--icon-lg); height: var(--icon-lg);} 
+  
+   /*아이콘 색상*/
+   .i-white{filter:invert(100%)}
+   .i-gray{filter: invert(41%) sepia(2%) saturate(8%) hue-rotate(22deg) brightness(95%) contrast(96%);}
+   .i-primary{filter: var(--filter-color-primary)}
+   .i-secondary{filter: var(--filter-color-secondary)}
+  
+   /*아이콘 포지션*/
+   /*line-1*/
+   .eicon-user{ background-position:0 0px;}
+   .i-sm .eicon-user{ background-position:0 0px;}
+   .i-md .eicon-user{ background-position:0 0px;}
+   .i-lg .eicon-user{ background-position:0 0px;}
+  
+   .eicon-add-circle{ background-position:0 calc(var(--icon-df) * -1);}
+   .i-sm .eicon-add-circle{ background-position:0 calc(var(--icon-sm) * -1);}
+   .i-md .eicon-add-circle{ background-position:0 calc(var(--icon-md) * -1);}
+   .i-lg .eicon-add-circle{ background-position:0 calc(var(--icon-lg) * -1);}
+  
+   .eicon-dashboard{ background-position:0  calc(var(--icon-df) * -2);}
+   .i-sm .eicon-dashboard{ background-position:0  calc(var(--icon-sm) * -2);}
+   .i-md .eicon-dashboard{ background-position:0  calc(var(--icon-md) * -2);}
+   .i-lg .eicon-dashboard{ background-position:0  calc(var(--icon-lg) * -2);}
+  
+   .eicon-ad{ background-position:0 calc(var(--icon-df) * -3);}
+   .i-sm .eicon-ad{ background-position:0 calc(var(--icon-sm) * -3);}
+   .i-md .eicon-ad{ background-position:0 calc(var(--icon-md) * -3);}
+   .i-lg .eicon-ad{ background-position:0 calc(var(--icon-lg) * -3);}
+  
+   .eicon-display{ background-position:0 calc(var(--icon-df) * -4);}
+   .i-sm .eicon-display{ background-position:0 calc(var(--icon-sm) * -4);}
+   .i-md .eicon-display{ background-position:0 calc(var(--icon-md) * -4);}
+   .i-lg .eicon-display{ background-position:0 calc(var(--icon-lg) * -4);}
+  
+   .eicon-img-file{ background-position:0 calc(var(--icon-df) * -5);}
+   .i-sm .eicon-img-file{ background-position:0 calc(var(--icon-sm) * -5);}
+   .i-md .eicon-img-file{ background-position:0 calc(var(--icon-md) * -5);}
+   .i-lg .eicon-img-file{ background-position:0 calc(var(--icon-lg) * -5);}
+  
+   .eicon-video-film{ background-position:0 calc(var(--icon-df) * -6);}
+   .i-sm .eicon-video-film{ background-position:0 calc(var(--icon-sm) * -6);}
+   .i-md .eicon-video-film{ background-position:0 calc(var(--icon-md) * -6);}
+   .i-lg .eicon-video-film{ background-position:0 calc(var(--icon-lg) * -6);}
+  
+   .eicon-sack-money{ background-position:0 calc(var(--icon-df) * -7);}
+   .i-sm .eicon-sack-money{ background-position:0 calc(var(--icon-sm) * -7);}
+   .i-md .eicon-sack-money{ background-position:0 calc(var(--icon-md) * -7);}
+   .i-lg .eicon-sack-money{ background-position:0 calc(var(--icon-lg) * -7);}
+  
+   .eicon-receipt{ background-position:0 calc(var(--icon-df) * -8);}
+   .i-md .eicon-receipt{ background-position:0 calc(var(--icon-md) * -8);}
+   .i-lg .eicon-receipt{ background-position:0 calc(var(--icon-lg) * -8);}
+   
+   .eicon-user-group{ background-position:0 calc(var(--icon-df) * -9);}
+   .i-md .eicon-user-group{ background-position:0 calc(var(--icon-md) * -9);}
+   .i-lg .eicon-user-group{ background-position:0 calc(var(--icon-lg) * -9);}
+  
+   .eicon-bell{ background-position:0 calc(var(--icon-df) * -10);}
+   .i-md .eicon-bell{ background-position:0 calc(var(--icon-md) * -10);}
+   .i-lg .eicon-bell{ background-position:0 calc(var(--icon-lg) * -10);}
+  
+   /*line-2*/
+   .eicon-expand { background-position:calc(var(--icon-df) * -1) 0;}
+   .i-md .eicon-expand{ background-position:calc(var(--icon-md) * -1) 0px;}
+   .i-lg .eicon-expand{ background-position:calc(var(--icon-lg) * -1) 0px;}
+  
+   .eicon-contract { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -1);}
+   .i-md .eicon-contract { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -1);}
+   .i-lg .eicon-contract { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -1);}
+  
+   .eicon-file-download { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -2);}
+   .i-sm .eicon-file-download { background-position:calc(var(--icon-sm) * -1) calc(var(--icon-sm) * -2);}
+   .i-md .eicon-file-download { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -2);}
+   .i-lg .eicon-file-download { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -2);}
+  
+   .eicon-calendar { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -3);}
+   .i-md .eicon-calendar { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -3);}
+   .i-lg .eicon-calendar { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -3);}
+  
+   .eicon-video { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -4);}
+   .i-md .eicon-video { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -4);}
+   .i-lg .eicon-video { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -4);}
+  
+   .eicon-img-document { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -5);}
+   .i-md .eicon-img-document { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -5);}
+   .i-lg .eicon-img-document { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -5);}
+  
+   .eicon-calendar-day { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -6);}
+   .i-md .eicon-calendar-day { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -6);}
+   .i-lg .eicon-calendar-day { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -6);}
+  
+   .eicon-time { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -7);}
+   .i-md .eicon-time { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -7);}
+   .i-lg .eicon-time { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -7);}
+  
+   .eicon-buliding { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -8);}
+   .i-md .eicon-buliding { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -8);}
+   .i-lg .eicon-buliding { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -8);}
+  
+   .eicon-position { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -9);}
+   .i-md .eicon-position { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -9);}
+   .i-lg .eicon-position { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -9);}
+  
+   .eicon-pencile { background-position:calc(var(--icon-df) * -1) calc(var(--icon-df) * -10);}
+   .i-md .eicon-pencile { background-position:calc(var(--icon-md) * -1) calc(var(--icon-md) * -10);}
+   .i-lg .eicon-pencile { background-position:calc(var(--icon-lg) * -1) calc(var(--icon-lg) * -10);}
+  
+    /*line-3*/
+    .eicon-chart { background-position: calc(var(--icon-df) * -2) calc(var(--icon-df) * -0);}
+    .i-md .eicon-chart{ background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -0);}
+    .i-lg .eicon-chart{ background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -0);}
+   
+    .eicon-copy { background-position: calc(var(--icon-df) * -2) calc(var(--icon-df) * -1);}
+    .i-md .eicon-copy { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -1);}
+    .i-lg .eicon-copy { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -1);}
+   
+    .eicon-trash { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -2);}
+    .i-sm .eicon-trash { background-position:calc(var(--icon-sm) * -2) calc(var(--icon-sm) * -2);}
+    .i-md .eicon-trash { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -2);}
+    .i-lg .eicon-trash { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -2);}
+   
+    .eicon-chevron-up { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -3);}
+    .i-md .eicon-chevron-up { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -3);}
+    .i-lg .eicon-chevron-up { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -3);}
+   
+    .eicon-chevron-right { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -4);}
+    .i-md .eicon-chevron-right { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -4);}
+    .i-lg .eicon-chevron-right { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -4);}
+   
+    .eicon-chevron-down { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -5);}
+    .i-md .eicon-chevron-down { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -5);}
+    .i-lg .eicon-chevron-down { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -5);}
+   
+    .eicon-chevron-left { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -6);}
+    .i-md .eicon-chevron-left { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -6);}
+    .i-lg .eicon-chevron-left { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -6);}
+   
+    .eicon-plus-solid { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -7);}
+    .i-sm .eicon-plus-solid { background-position:calc(var(--icon-sm) * -2) calc(var(--icon-sm) * -7);}
+    .i-md .eicon-plus-solid { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -7);}
+    .i-lg .eicon-plus-solid { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -7);}
+   
+    .eicon-minus-solid { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -8);}
+    .i-md .eicon-minus-solid { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -8);}
+    .i-lg .eicon-minus-solid { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -8);}
+   
+    .eicon-question-circle { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -9);}
+    .i-md .eicon-question-circle { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -9);}
+    .i-lg .eicon-question-circle { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -9);}
+   
+    .eicon-cancel { background-position:calc(var(--icon-df) * -2) calc(var(--icon-df) * -10);}
+    .i-sm .eicon-cancel { background-position:calc(var(--icon-sm) * -2) calc(var(--icon-sm) * -10);}
+    .i-md .eicon-cancel { background-position:calc(var(--icon-md) * -2) calc(var(--icon-md) * -10);}
+    .i-lg .eicon-cancel { background-position:calc(var(--icon-lg) * -2) calc(var(--icon-lg) * -10);}
+  
+    /*line-4*/
+    .eicon-hamberger-menu { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -0);}
+    .i-md .eicon-hamberger-menu{ background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -0);}
+    .i-lg .eicon-hamberger-menu{ background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -0);}
+   
+    .eicon-kebab-menu { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -1);}
+    .i-md .eicon-kebab-menu { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -1);}
+    .i-lg .eicon-kebab-menu { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -1);}
+   
+    .eicon-meatball-menu { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -2);}
+    .i-md .eicon-meatball-menu { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -2);}
+    .i-lg .eicon-meatball-menu { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -2);}
+   
+    .eicon-pin { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -3);}
+    .i-md .eicon-pin { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -3);}
+    .i-lg .eicon-pin { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -3);}
+   
+    .eicon-bus { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -4);}
+    .i-md .eicon-bus { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -4);}
+    .i-lg .eicon-bus { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -4);}
+   
+    .eicon-play { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -5);}
+    .i-md .eicon-play { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -5);}
+    .i-lg .eicon-play { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -5);}
+   
+    .eicon-refresh { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -6);}
+    .i-md .eicon-refresh { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -6);}
+    .i-lg .eicon-refresh { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -6);}
+   
+    .eicon-search { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -7);}
+    .i-md .eicon-search { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -7);}
+    .i-lg .eicon-search { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -7);}
+   
+    .eicon-maximize { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -8);}
+    .i-md .eicon-maximize { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -8);}
+    .i-lg .eicon-maximize { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -8);}
+   
+    .eicon-minimize { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -9);}
+    .i-md .eicon-minimize { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -9);}
+    .i-lg .eicon-minimize { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -9);}
+   
+    .eicon-restore { background-position:calc(var(--icon-df) * -3) calc(var(--icon-df) * -10);}
+    .i-md .eicon-restore { background-position:calc(var(--icon-md) * -3) calc(var(--icon-md) * -10);}
+    .i-lg .eicon-restore { background-position:calc(var(--icon-lg) * -3) calc(var(--icon-lg) * -10);}
+  
+  /*line-5*/
+  .eicon-channel { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -0);}
+  .i-md .eicon-channel{ background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -0);}
+  .i-lg .eicon-channel{ background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -0);}
+  
+  .eicon-setting { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -1);}
+  .i-md .eicon-setting { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -1);}
+  .i-lg .eicon-setting { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -1);}
+  
+  .eicon-present { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -2);}
+  .i-md .eicon-present { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -2);}
+  .i-lg .eicon-present { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -2);}
+  
+  .eicon-target { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -3);}
+  .i-md .eicon-target { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -3);}
+  .i-lg .eicon-target { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -3);}
+  
+  .eicon-figure { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -4);}
+  .i-md .eicon-figure { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -4);}
+  .i-lg .eicon-figure { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -4);}
+  
+  .eicon-network { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -5);}
+  .i-md .eicon-network { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -5);}
+  .i-lg .eicon-network { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -5);}
+  
+  .eicon-universal-access { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -6);}
+  .i-md .eicon-universal-access { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -6);}
+  .i-lg .eicon-universal-access { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -6);}
+  
+  .eicon-wrench { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -7);}
+  .i-md .eicon-wrench { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -7);}
+  .i-lg .eicon-wrench { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -7);}
+  
+  .eicon-warning-circle { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -8);}
+  .i-md .eicon-warning-circle { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -8);}
+  .i-lg .eicon-warning-circle { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -8);}
+  
+  .eicon-warning-triangle { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -9);}
+  .i-md .eicon-warning-triangle { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -9);}
+  .i-lg .eicon-warning-triangle { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -9);}
+  
+  .eicon-warning { background-position:calc(var(--icon-df) * -4) calc(var(--icon-df) * -10);}
+  .i-md .eicon-warning { background-position:calc(var(--icon-md) * -4) calc(var(--icon-md) * -10);}
+  .i-lg .eicon-warning { background-position:calc(var(--icon-lg) * -4) calc(var(--icon-lg) * -10);}
+  
+  /*line-6*/
+  .eicon-question { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -0);}
+  .i-md .eicon-question{ background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -0);}
+  .i-lg .eicon-question{ background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -0);}
+  
+  .eicon-user-solid { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -1);}
+  .i-md .eicon-user-solid { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -1);}
+  .i-lg .eicon-user-solid { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -1);}
+  
+  .eicon-check-circle { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -2);}
+  .i-md .eicon-check-circle { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -2);}
+  .i-lg .eicon-check-circle { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -2);}
+  
+  .eicon-check-solid { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -3);}
+  .i-md .eicon-check-solid { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -3);}
+  .i-lg .eicon-check-solid { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -3);}
+  
+  .eicon-check { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -4);}
+  .i-md .eicon-check { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -4);}
+  .i-lg .eicon-check { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -4);}
+  
+  .eicon-arrow-left { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -5);}
+  .i-md .eicon-arrow-left { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -5);}
+  .i-lg .eicon-arrow-left { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -5);}
+  
+  .eicon-arrow-right { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -6);}
+  .i-md .eicon-arrow-right { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -6);}
+  .i-lg .eicon-arrow-right { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -6);}
+  
+  .eicon-sound { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -7);}
+  .i-md .eicon-sound { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -7);}
+  .i-lg .eicon-sound { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -7);}
+  
+  .eicon-eyes-open { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -8);}
+  .i-md .eicon-eyes-open { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -8);}
+  .i-lg .eicon-eyes-open { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -8);}
+  
+  .eicon-eyes-close { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -9);}
+  .i-md .eicon-eyes-close { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -9);}
+  .i-lg .eicon-eyes-close { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -9);}
+  
+  .eicon-mode-white { background-position:calc(var(--icon-df) * -5) calc(var(--icon-df) * -10);}
+  .i-md .eicon-mode-white { background-position:calc(var(--icon-md) * -5) calc(var(--icon-md) * -10);}
+  .i-lg .eicon-mode-white { background-position:calc(var(--icon-lg) * -5) calc(var(--icon-lg) * -10);}
+
+ /*line-7*/
+ .eicon-box-player { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -0);}
+ .i-md .eicon-box-player{ background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -0);}
+ .i-lg .eicon-box-player{ background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -0);}
+ 
+ .eicon-square-image { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -1);}
+ .i-md .eicon-square-image { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -1);}
+ .i-lg .eicon-square-image { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -1);}
+ 
+ .eicon-board-check { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -2);}
+ .i-md .eicon-board-check { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -2);}
+ .i-lg .eicon-board-check { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -2);}
+ 
+ .eicon-fill-folder { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -3);}
+ .i-md .eicon-fill-folder { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -3);}
+ .i-lg .eicon-fill-folder { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -3);}
+ 
+ .eicon-user-alone { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -4);}
+ .i-md .eicon-user-alone { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -4);}
+ .i-lg .eicon-user-alone { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -4);}
+ 
+ .eicon-mode-dark { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -5);}
+ .i-md .eicon-mode-dark { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -5);}
+ .i-lg .eicon-mode-dark { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -5);}
+ 
+ .eicon-plus-solid-200 { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -6);}
+ .i-sm .eicon-plus-solid-200 { background-position:calc(var(--icon-sm) * -6) calc(var(--icon-sm) * -6);}
+ .i-md .eicon-plus-solid-200 { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -6);}
+ .i-lg .eicon-plus-solid-200 { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -6);}
+ 
+ .eicon-pause { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -7);}
+ .i-md .eicon-pause {background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -7);}
+ .i-lg .eicon-pause { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -7);}
+ 
+ .eicon-warning-solid { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -8);}
+ .i-md .eicon-warning-solid { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -8);}
+ .i-lg .eicon-warning-solid { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -8);}
+ 
+ .eicon-chart-stick { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -9);}
+ .i-md .eicon-chart-stick { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -9);}
+ .i-lg .eicon-chart-stick { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -9);}
+ 
+ .eicon- { background-position:calc(var(--icon-df) * -6) calc(var(--icon-df) * -10);}
+ .i-md .eicon- { background-position:calc(var(--icon-md) * -6) calc(var(--icon-md) * -10);}
+ .i-lg .eicon- { background-position:calc(var(--icon-lg) * -6) calc(var(--icon-lg) * -10);}
+
+ /*line-8*/
+ .eicon-volume-on { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -0);}
+ .i-md .eicon-volume-on{ background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -0);}
+ .i-lg .eicon-volume-on{ background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -0);}
+ 
+ .eicon-volume-mute{ background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -1);}
+ .i-md .eicon-volume-mute { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -1);}
+ .i-lg .eicon-volume-mute { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -1);}
+ 
+ .eicon-expand-screen { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -2);}
+ .i-md .eicon-expand-screen { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -2);}
+ .i-lg .eicon-expand-screen { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -2);}
+ 
+ .eicon-collapse-screen { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -3);}
+ .i-md .eicon-collapse-screen { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -3);}
+ .i-lg .eicon-collapse-screen { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -3);}
+ 
+ .eicon-search-thin { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -4);}
+ .i-md .eicon-search-thin { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -4);}
+ .i-lg .eicon-search-thin { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -4);}
+ 
+ .eicon-test { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -5);}
+ .i-md .eicon- { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -5);}
+ .i-lg .eicon- { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -5);}
+ 
+ .eicon- { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -6);}
+ .i-sm .eicon- { background-position:calc(var(--icon-sm) * -7) calc(var(--icon-sm) * -6);}
+ .i-md .eicon- { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -6);}
+ .i-lg .eicon- { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -6);}
+ 
+ .eicon- { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -7);}
+ .i-md .eicon- {background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -7);}
+ .i-lg .eicon- { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -7);}
+ 
+ .eicon- { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -8);}
+ .i-md .eicon- { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -8);}
+ .i-lg .eicon- { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -8);}
+ 
+ .eicon- { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -9);}
+ .i-md .eicon- { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -9);}
+ .i-lg .eicon- { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -9);}
+ 
+ .eicon- { background-position:calc(var(--icon-df) * -7) calc(var(--icon-df) * -10);}
+ .i-md .eicon- { background-position:calc(var(--icon-md) * -7) calc(var(--icon-md) * -10);}
+ .i-lg .eicon- { background-position:calc(var(--icon-lg) * -7) calc(var(--icon-lg) * -10);}
+  
+  
+  
+  
+  
+  
+  
+   
